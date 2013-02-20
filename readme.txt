@@ -7,7 +7,7 @@
 Instructions:
 
 
-Download a copy of this repository as a ZIP file (there's an option in the top toolbar). Make sure that you UNZIP the folder before viewing.
+Download a copy of this repository as a ZIP file (there's an option in the top toolbar). Make sure that you UNZIP the folder before viewing. Then, right click on the index.html and select "open as/with" and choose your favorite browser.
 
 OR (copy, fork, pull request, whatever the verbiage is) and open up the index file in your browser of choice.
 
