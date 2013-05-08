@@ -42,6 +42,11 @@
 		<h1>The Woods</h1>
 		<h2>a short, choose your own adventure</h2>
 		<h3>by Jake Franklin</h3>
+		<audio id="music">
+			<source src="sound object draft.mp3">
+			your browser doesn't support this! WTF?!?!
+		</audio>
+		<center id="video"><iframe src="http://player.vimeo.com/video/64764981?title=0&amp;byline=0&amp;portrait=0&amp;color=0a0024&amp;autoplay=1&amp;" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></center>
 		<div  align="center"><a id="begin" href="#">Begin</a></div>
 		<div id="1" class="hidden">
 			You sit up with a start. Disoriented and confused, you find yourself sitting in a forest of oaks and pecan trees, leafless from the winterchill that has ended only recently. It's pleasant outside, the sky is a deep dark blue of a shade that can only be painted by a full moon and stars unhindered by city street lamps. You are not sure how you got here. Is this a dream? Did you sleep walk out into the woods surrounding your house? That must be it. But what woke you? As you get to your feet, you are swept with a feeling of...you're not sure what. Intrigue? You've never thought about the woods surrounding your house. What's back there? As you contemplate walking further into the woods, you feel a twinge of hesitation; maybe you should go back. Pensiveness fills your body. 
@@ -87,6 +92,7 @@
 							<a href="#" id="to1_1_1_1_1_2">You say no thank-you, unsure of its intentions and worried for your safety.</a>
 						</div>
 							<div id="1_1_1_1_1_1" class="hidden">
+								<img src="Still Image Project.png" style="float:right;"/>
 								You take the string, and are immediately pulled upwards. You hold on tight and begin to rise slowly toward the moon. The beast looks up at you, amused. You start to panic, and just as you decide to let go, the beast jumps up and grabs the string next to you, and you both sink back to the earth. After you land, the beast unleashes series of grunts and trills, and when it sees that you don't understand, it draws you a series of pictures on the ground. They depict a tall, slender figure with many arms, and the slender figure is following another figure walking through the woods. Then it depicts a group of creatures holding strange, long poles and you realize that these are the creatures that were making the music you heard. The music seems to ward off the slender figure, and the last frame depicts the other figure talking with a depiction of what could only be the large, furry beast. Confused, you begin to realize that you need to get back to your home. You nod your head at the beast and thanking it and begin to explain that you need to go. Suddenly the beast grabs you and before you realize what's happening you are both flying through the air. Terrified, you cling to the furry underbelly of the beast, who is holding onto you with one hand, while grasping the string with the other, which seems to be pulling you both through the air. After a few exhilarating minutes, you begin to descend, and when the beast finally puts you down, you realize that you are in front of your house. The beast blinks at you with its large, glowing-white eyes, touches your head gently with its huge paw, and then takes off back towards the woods at an alarming speed. 
 								<br/>
 								<a href="#" id="to1_1_1_1_1_1a">Next.</a>
@@ -156,10 +162,12 @@
 			$("#begin").fadeOut(function(){
 				$("#1").fadeIn();
 			});
+			$("#video").fadeOut();
 		});
 		$("#to1_1").click(function(){
 			$("#1").fadeOut(function(){
 				$("#1_1").fadeIn();
+			$("#music").trigger("play");
 			});
 		});
 		$("#to1_1_1").click(function(){
